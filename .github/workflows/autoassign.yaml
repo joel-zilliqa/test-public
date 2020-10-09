@@ -12,3 +12,4 @@ jobs:
         title-template: '[%branch%]'
         replace-title: false
         title-prefix-space: true
+        uppercase-title: false
