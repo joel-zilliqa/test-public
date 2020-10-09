@@ -8,6 +8,7 @@ jobs:
       if: github.event.action == 'opened'
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
+        branch-regex: '.*'
         title-template: '[%branch%]'
         replace-title: false
         title-prefix-space: true
