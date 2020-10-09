@@ -1,8 +1,5 @@
 name: Add Target Branch to Pull Request Title
 on: pull_request
-  types: [opened]
-env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:
   pr_update_text:
     runs-on: ubuntu-latest
