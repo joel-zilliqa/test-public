@@ -10,6 +10,7 @@ jobs:
     - uses: tzkhan/pr-update-action@v1.1.1
       if: github.event.action == 'opened'
       with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
         title-template: '[%branch%]'
         replace-title: false
         title-prefix-space: true
