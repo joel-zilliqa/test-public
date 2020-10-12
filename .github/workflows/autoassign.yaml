@@ -4,7 +4,7 @@ jobs:
   pr_update_text:
     runs-on: ubuntu-latest
     steps:
-    - uses: joel-zilliqa/pr-update-action@v1.0.1
+    - uses: joel-zilliqa/pr-update-action@v1.0.2
       if: github.event.action == 'opened'
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
