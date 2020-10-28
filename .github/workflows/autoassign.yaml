@@ -10,6 +10,6 @@ jobs:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         base-branch-regex: '.*'
         title-template: '[%basebranch%]'
-        replace-title: false
-        title-prefix-space: true
-        uppercase-title: false
+        title-update-action: 'prefix'
+        title-insert-space: true
+        title-uppercase-base-match: false
